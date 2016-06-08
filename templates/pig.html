@@ -1,3 +1,13 @@
+<!-- <h1> My Loop </h1>
+{%for new_number in numbers%}
+<h3> Your number is: {{new_number}} </h3>
+{% endfor %} -->
+<!-- my_variables = {"numbers" : [9,5,5,10]} -->
+
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head> <h1>Pig Latin App</h1>
@@ -5,7 +15,12 @@
     <title> Let's learn Pig Latin </title>
   </head>
   <br></br>
-  <body>"Let's learn how to speak pig latin!"
-    <img src="https://www.google.com/search?q=pig+latin&espv=2&biw=1398&bih=738&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKwdrx-ZbNAhVO3mMKHcCxBJsQ_AUICCgD#imgrc=fUwSiuUi8CF7xM%3A" alt="Pig Latin" />
+  <body>
+    <h1> Put the word you want to translate below! </h1>
+    <form method= post>
+      <input type="text" name="user_word">
+      <input type="submit" value="Let's Go!">
+    </form>
+    <h2>{{translated_word}}</h2>
   </body>
 </html>
